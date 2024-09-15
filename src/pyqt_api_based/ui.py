@@ -263,9 +263,29 @@ class MainWindow(QMainWindow):
 
         <h2>Fine-tuning Page</h2>
         <ul>
+            <li><b>APPROACH 1</b> You already have the structured dataset in Huggingface</li>
             <li><b>Hugging Face Dataset Repository:</b> Enter the Hugging Face dataset repository (optional).</li>
-            <li><b>Local Dataset Directory:</b> Enter the local dataset directory path.</li>
-            <li><b>CSV File:</b> Enter the path to the CSV file containing metadata.</li>
+            <li><b>Local Dataset Directory:</b> NOT APPLICABLE HERE. Leave empty</li>
+            <li><b>CSV File:</b> NOT APPLICABLE HERE. Leave empty</li>
+            <li><b>Model Type:</b> Select the model type ('mms' or 'vits').</li>
+            <li><b>Voice Name:</b> Enter a name for the voice you're creating.</li>
+            <li><b>Language Code:</b> Enter the language code (e.g., 'en' for English, 'sw' for Swahili).</li>
+            <li>Click the <b>Fine-tune</b> button to start fine-tuning.</li>
+        </ul>
+        
+
+        <ul>
+            <li><b>APPROACH 2</b> You are preparing the dataset Locally. This approach handles pushing the data to hugginface </li>
+            <li><b>Hugging Face Dataset Repository:</b>NOT APPLICABLE HERE. Leave empty.</li>
+            <li><b>Local Dataset Directory:</b> Enter Path to the directory containing .wav  the Audio Files. NB in wav format in name pattern "001.wav,002.wav,...".</li>
+            <li><b>CSV File:</b> Enter the path to the CSV file containing metadata. The CSV file should have the following columns:
+                * file_name: Name of the .wav file (e.g., "001.wav")
+                * text: Corresponding text for the audio file
+                * speaker_id: ID of the speaker (optional, default is 1)
+                Example CSV content:
+                    file_name,text,speaker_id
+                    001.wav,This is the first sentence.,1
+                    002.wav,This is the second sentence.,1</li>
             <li><b>Model Type:</b> Select the model type ('mms' or 'vits').</li>
             <li><b>Voice Name:</b> Enter a name for the voice you're creating.</li>
             <li><b>Language Code:</b> Enter the language code (e.g., 'en' for English, 'sw' for Swahili).</li>
