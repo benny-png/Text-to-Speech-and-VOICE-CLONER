@@ -88,10 +88,10 @@ To stop the application, simply close the GUI window.
 
 ## File Structure
 - `main.py`: Main script to start the application.
-- `ui.py`: PyQt6 UI code for the application.
-- `threads.py`: Handles setup, fine-tuning, and audio generation tasks.
-- `routes.py`: FastAPI routes for backend operations.
-- `helpers.py`: Custom widgets for PyQt6 UI.
+- `src\pyqt_api_based\ui.py`: PyQt6 UI code for the application.
+- `src\pyqt_api_based\threads.py`: Handles setup, fine-tuning, and audio generation tasks.
+- `src\routes\routes.py`: FastAPI routes for backend operations.
+- `src\pyqt_api_based\helpers.py`: Custom widgets for PyQt6 UI.
 - `requirements.txt`: List of dependencies.
 
 ## Documentation
