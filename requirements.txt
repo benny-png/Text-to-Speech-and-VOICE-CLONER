@@ -6,3 +6,11 @@ wandb
 tensorboard
 Cython
 phonemizer
+uvicorn
+fastapi
+python-multipart
+scipy==1.13.0
+huggingface_hub
+numpy==1.24.3
+PyQt6
+
