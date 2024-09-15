@@ -1,6 +1,6 @@
 # Voice Cloner
 
-Voice Cloner is a Python application that enables users to fine-tune Text-to-Speech (TTS) models and generate audio from text. It features a user-friendly GUI built with PyQt6 and a backend powered by FastAPI.
+Voice Cloner is a Python application that enables users to fine-tune Text-to-Speech (TTS) models and generate audio from text. It features a user-friendly GUI built with PyQt6 and a backend powered by FastAPI. Supported languages (e.g., 'en' for English, 'sw' for Swahili, 'ko' for Korean, 'mr' for Marathi, 'ta' for Tamil, 'gu' for Gujarati).
 
 ![PYQT UI](https://github.com/benny-png/VOICE-CLONER-FASTAPI/blob/master/pyqt_ui.png)
 
