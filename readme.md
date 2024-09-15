@@ -2,7 +2,7 @@
 
 Voice Cloner is a Python application that enables users to fine-tune Text-to-Speech (TTS) models and generate audio from text. It features a user-friendly GUI built with PyQt6 and a backend powered by FastAPI. 
 
-![PYQT UI](https://github.com/benny-png/VOICE-CLONER-FASTAPI/blob/master/pyqt_ui.png)
+![PYQT UI](https://github.com/benny-png/VOICE-CLONER-FASTAPI/blob/master/images/pyqt_ui.png)
 
 ## Table of Contents
 - [Features](#features)
@@ -18,7 +18,7 @@ For fine tuning Supported languages are (e.g., 'en' for English, 'sw' for Swahil
 
 For generating audio you can use your fine tuned hugginface model (just put your repo) or you can use existing models of different languages by facebook [here](https://huggingface.co/models?search=facebook/mms-tts)
 
-![PYQT UI](https://github.com/benny-png/VOICE-CLONER-FASTAPI/blob/master/generate_audio.png)
+![PYQT UI](https://github.com/benny-png/VOICE-CLONER-FASTAPI/blob/master/images/generate_audio.png)
 
 
 ## Features
@@ -69,7 +69,7 @@ This will start the PyQt6 application. The FastAPI server is assumed to be runni
 
 ### Fine-tuning
 
-![PYQT UI](https://github.com/benny-png/VOICE-CLONER-FASTAPI/blob/master/finetune.png)
+![PYQT UI](https://github.com/benny-png/VOICE-CLONER-FASTAPI/blob/master/images/finetune.png)
 
 
 #### Approach 1: Using an Existing Structured Dataset on Hugging Face
