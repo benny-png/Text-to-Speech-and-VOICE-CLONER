@@ -1,8 +1,8 @@
 from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, 
                              QHBoxLayout, QLabel, QStackedWidget, QProgressBar, QTextEdit, QScrollArea)
 from PyQt6.QtCore import Qt
-from helpers import StyledButton, StyledLineEdit, StyledComboBox
-from threads import SetupThread, FinetuneThread, GenerateAudioThread
+from src.pyqt_api_based.helpers import StyledButton, StyledLineEdit, StyledComboBox
+from src.pyqt_api_based.threads import SetupThread, FinetuneThread, GenerateAudioThread
 
 class MainWindow(QMainWindow):
     """
@@ -142,13 +142,17 @@ class MainWindow(QMainWindow):
 
         self.model_type = StyledComboBox()
         self.model_type.addItems(["mms", "vits"])
-        self.model_type.setPlaceholderText("Select model type (mms or vits)")  # Using a combobox, but no placeholder in Qt for real
+        self.model_type.setPlaceholderText("Select model type (mms or vits) Leave default MMS if you dont understand")  # Using a combobox, but no placeholder in Qt for real
         finetune_layout.addWidget(self.model_type)
 
         self.voice_name = StyledLineEdit("Enter a name for the voice you're creating")
         finetune_layout.addWidget(self.voice_name)
 
-        self.language = StyledLineEdit("Enter language code (e.g., 'en' for English, 'sw' for Swahili)")
+        self.language = StyledComboBox()
+        # Map the languages with descriptive names
+         
+        self.language.addItems(["en", "sw", "ko", "mr", "ta", "gu"])
+        self.language.setPlaceholderText("Select language code (e.g., 'en' for English, 'sw' for Swahili, 'ko' for Korean, 'mr' for Marathi, 'ta' for Tamil, 'gu' for Gujarati)")
         finetune_layout.addWidget(self.language)
 
         finetune_button = StyledButton("Fine-tune", "#2ecc71")
