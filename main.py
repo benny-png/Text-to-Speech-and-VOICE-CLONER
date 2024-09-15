@@ -1,4 +1,4 @@
-from src.pyqt.main import MainWindow
+from src.pyqt_api_based.main import MainWindow
 from PyQt6.QtWidgets import QApplication
 import sys
 
