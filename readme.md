@@ -69,6 +69,9 @@ This will start the PyQt6 application. The FastAPI server is assumed to be runni
 
 ### Fine-tuning
 
+![PYQT UI](https://github.com/benny-png/VOICE-CLONER-FASTAPI/blob/master/finetune.png)
+
+
 #### Approach 1: Using an Existing Structured Dataset on Hugging Face
 1. **Hugging Face Dataset Repository**: Enter the repository name (optional).
 2. **Model Type**: Select the model type ('mms' or 'vits').
@@ -111,7 +114,6 @@ To stop the application, simply close the GUI window.
 
 ### Fine-tuning Page
 
-![PYQT UI](https://github.com/benny-png/VOICE-CLONER-FASTAPI/blob/master/finetune.png)
 
 #### Approach 1: Using Hugging Face Dataset
 - Enter Hugging Face Dataset Repository (optional).
