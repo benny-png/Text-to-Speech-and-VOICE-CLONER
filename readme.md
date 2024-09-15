@@ -110,6 +110,9 @@ To stop the application, simply close the GUI window.
 - Click the **Setup** button to initialize.
 
 ### Fine-tuning Page
+
+![PYQT UI](https://github.com/benny-png/VOICE-CLONER-FASTAPI/blob/master/finetune.png)
+
 #### Approach 1: Using Hugging Face Dataset
 - Enter Hugging Face Dataset Repository (optional).
 - Select the **Model Type** ('mms' or 'vits').
