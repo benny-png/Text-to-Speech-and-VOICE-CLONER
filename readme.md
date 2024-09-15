@@ -108,6 +108,9 @@ To stop the application, simply close the GUI window.
 
 ## Documentation
 
+![PYQT UI](https://github.com/benny-png/VOICE-CLONER-FASTAPI/blob/master/images/documentation.png)
+
+
 ### Setup Page
 - **Hugging Face Token**: Enter your Hugging Face token.
 - Click the **Setup** button to initialize.
